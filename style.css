@@ -1,0 +1,144 @@
+body{
+    background-color: #100121;
+    margin: 0;
+    color: rgb(12, 2, 27);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    width: 100vw;
+}
+.fblock{
+    background-color: #25004fba;
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.sblock p{
+    margin-left: 5vw;
+    margin-top: 0;
+}
+.tblock p{
+    margin-left: 5vw;
+    margin-top: 0;
+}
+p{
+    width: 90vw;
+    font-size: 25px;
+}
+
+.fblock a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+.sblock{
+    background-color: #e8d8ff;
+    padding-top: 2vw;
+    display: block;
+    padding-bottom: 2vw;
+    
+}
+.imageblock{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    
+    gap: 1vw;
+  
+}
+
+img{
+    width: 30vw;
+    height: 20vw;
+    object-fit: cover;
+}
+.conim {
+    position: relative;
+}
+   
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #25004fba;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .conim:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+iframe{
+    width: 30vw;
+    object-fit: cover;
+    height: 20vw;
+}
+h2{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 5vw;
+    width: 80vw;
+}
+.tblock{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    color: aliceblue;
+}
+@media screen and (max-width:600px) {
+    .imageblock{
+        flex-direction: column;
+        align-items: center;
+    }
+    img, iframe{
+        width: 90vw;
+        height: auto;
+    }
+}
+.fblock a:hover{
+    color: rgb(208, 184, 244);
+}
+.fblock a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  
+  .fblock a:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }

@@ -1,0 +1,45 @@
+{
+    "1_team": {
+        "id": 1,
+        "title": "Первая верстка",
+        "desc": "Пару страниц стилизованной авторизации",
+        "img": "img2/1.png",
+        "share": "https://cchromevox.github.io/FirstVerstka/"
+            
+    },
+    "2_team": {
+        "id": 2,
+        "title": "Сайт с фильмами",
+        "desc": "Аниме фильмы в блоках",
+        "img": "img2/2.png",
+        "share": "https://cchromevox.github.io/SecondVerstka/"
+    },
+    "3_team": {
+        "id": 3,
+        "title": "Портфолио",
+        "desc": "Легкий лендинг с информацией обо мне",
+        "img": "img2/3.png",
+        "share": "https://cchromevox.github.io/SecondVerstka/portfolio.html"
+    },
+    "4_team": {
+        "id": 4,
+        "title": "РК1",
+        "desc": "Лендинг на первый РК",
+        "img": "img2/4.png",
+        "share": "https://cchromevox.github.io/SecondVerstka/lp.html"
+    },
+    "5_team": {
+        "id": 5,
+        "title": "Рубежка 2",
+        "desc": "Страница с запросом с АПИ",
+        "img": "img2/5.png",
+        "share": "https://cchromevox.github.io/RK2_web/"
+    },
+    "6_team": {
+        "id": 6,
+        "title": "Калькулятор красивый",
+        "desc": "После входа появляется",
+        "img": "img2/6.png",
+        "share": "https://cchromevox.github.io/HWCalculator/Aliya"
+    }
+}

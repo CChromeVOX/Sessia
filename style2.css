@@ -1,0 +1,187 @@
+.fblock{
+    background-color: #25004fba;
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.fblock a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+.fblock a:hover{
+    color: rgb(208, 184, 244);
+}
+.fblock a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  
+  .fblock a:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.block {
+    width: 500px;
+    height: 400px;
+    background: #100121;
+    padding: 15px;
+   
+}
+.inside{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+body {
+    background-color: #100121;
+    margin: 0;
+    color: rgb(12, 2, 27);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    width: 100vw;
+    color: aliceblue;
+}
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button{
+width: 10vw;
+height: 3vw;
+margin-left: 1vw;
+color:  aliceblue;
+font-size: 20px;
+background: #8343ccba;
+border: none;
+cursor: pointer;
+}
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+button:hover {
+    color: #25004fba;
+    background: #fff;
+  }
+  .button:hover:after {
+    width: 100%;
+  }
+  
+input[type="text"]{
+    width: 15vw;
+    height: 3vw;
+    border: none;
+    padding-left: 2vw;
+
+}
+.wrapper {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 50px;
+}
+#container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+flex-wrap: wrap;
+gap: 50px;
+text-align: left;
+}
+.block {
+width: 500px;
+background: #25004fba;
+padding: 15px;
+border-radius: 16px;
+}
+.pro{
+    display: flex;
+    width: 80vw;
+    gap: 5vw;
+}
+@media screen and (max-width: 1000px){
+    .pro{
+        flex-direction: column;
+    }
+    input[type="text"]{
+        width: 30vw;
+        height: 10vw;
+    }
+    button{
+        width: 30vw;
+        height: 10vw;
+
+        }
+}
+@media screen and (max-width: 600px){
+    .block{
+        width: 320px;
+        padding: 10px;
+    }
+    .pro{
+        width: 90vw;
+    }
+    .inside{
+        height: 50%;
+    }
+    h2{
+        margin-block-start: 0.33em;
+        margin-block-end: 0.33em;
+    }
+   
+}
